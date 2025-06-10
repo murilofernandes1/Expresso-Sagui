@@ -41,6 +41,25 @@
         padding-left: 20px;
         padding-right: 0px;
     }
+    .botao-home{
+      background: #ffd60a;
+      color: white;
+      border: none;
+      border-radius: 26px;
+      padding: 14px 32px;
+      font-size: 1.05rem;
+      margin: 10px 14px 0 0;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 700;
+      box-shadow: 0 2px 8px rgba(255, 214, 10, 0.08);
+      }
+      .botao-home:hover {
+      background: #3a2c00;
+      color: #fff;
+      }
 .rodape{
       padding: 24px;
       text-align: center;

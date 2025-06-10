@@ -10,6 +10,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: 100vh;
     }
 
     .cabecalho {
@@ -17,7 +18,7 @@
         position: fixed;
         top: 0; left: 0; right: 0;
         background: linear-gradient(90deg, #ffe066 60%, #ffd60a 100%);
-        box-shadow: 0 4px 16px rgba(255, 214, 10, 0.12);
+        box-shadow: 0 4px 16px rgba(255, 214, 10, 0.14);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -28,13 +29,13 @@
     }
 
     .logo {
-        height: 120px;
-        margin-right: 28px;
+        height: 100px;
+        margin-right: 24px;
         filter: drop-shadow(0 2px 8px #fffde7);
     }
 
     .home {
-        padding-top: 70px;
+        padding-top: 90px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -54,13 +55,12 @@
     }
 
     form#cotacao {
-        padding-top: -100px;
         background: #fff;
         max-width: 420px;
         margin: 32px auto;
         padding: 32px 32px 24px 32px;
         border-radius: 16px;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        box-shadow: 0 4px 24px rgba(0,0,0,0.10);
         display: flex;
         flex-direction: column;
         gap: 18px;
@@ -87,7 +87,7 @@
         border: 1.5px solid #e2e8f0;
         border-radius: 8px;
         background: #f9fafb;
-        transition: border 0.2s;
+        transition: border 0.2s, box-shadow 0.2s;
         margin-bottom: 12px;
     }
 
@@ -95,6 +95,7 @@
         border-color: #3182ce;
         outline: none;
         background: #fff;
+        box-shadow: 0 0 0 2px #ffd60033;
     }
 
     form#cotacao button[type="submit"] {
@@ -108,21 +109,44 @@
         padding: 14px 0;
         margin-top: 10px;
         cursor: pointer;
-        transition: background 0.2s, box-shadow 0.2s;
-        box-shadow: 0 2px 8px rgba(49,130,206,0.08);
+        transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+        box-shadow: 0 2px 8px rgba(49,130,206,0.10);
     }
 
     form#cotacao button[type="submit"]:hover {
         background: #3a2c00;
-        box-shadow: 0 4px 16px rgba(49,130,206,0.12);
+        color: #ffd600;
+        box-shadow: 0 4px 16px rgba(49,130,206,0.14);
     }
-    .rodape{
-      padding: 24px;
-      text-align: center;
-      font-size: 0.9rem;
-      margin-top: 36px;
-      border-top-left-radius: 24px;
-      border-top-right-radius: 24px;
-      color: black;
-      
-      }
+
+    .botao-home {
+        background: #ffd60a;
+        color: white;
+        border: none;
+        border-radius: 26px;
+        padding: 14px 32px;
+        font-size: 1.05rem;
+        margin: 10px 14px 0 0;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: 700;
+        box-shadow: 0 2px 8px rgba(255, 214, 10, 0.10);
+    }
+    .botao-home:hover {
+        background: #3a2c00;
+        color: #ffd60a;
+        box-shadow: 0 4px 16px rgba(255, 214, 10, 0.16);
+    }
+
+    .rodape {
+        padding: 24px;
+        text-align: center;
+        font-size: 0.9rem;
+        margin-top: 36px;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        color: #3a2c00;
+        
+    }

@@ -1,136 +1,141 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
-      margin: 0;
-      font-family: 'Montserrat', Arial, sans-serif;
-      background: linear-gradient(90deg, #fff9c4 60%, #ffe066 100%);
-      color: #3a2c00;
-      }
-      .cabecalho {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      background: linear-gradient(90deg, #ffe066 60%, #ffd60a 100%);
-      box-shadow: 0 4px 16px rgba(255, 214, 10, 0.12);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0 40px;
-      z-index: 100;
-      height: 80px;
-      border-bottom-left-radius: 32px;
-      border-bottom-right-radius: 32px;
-      }
-      .logo {
-      height: 120px;
-      margin-right: 28px;
-      filter: drop-shadow(0 2px 8px #fffde7);
-      }
-      .botao-topo {
-      background: #fffde7;
-      border: none;
-      color: #3a2c00;
-      font-size: 1.1rem;
-      margin: 0 16px;
-      padding: 10px 22px;
-      cursor: pointer;
-      border-radius: 24px;
-      font-weight: 700;
-      box-shadow: 0 2px 8px rgba(255, 214, 10, 0.08);
-      transition: background 0.2s, color 0.2s;
-      }
-      .botao-topo:hover {
-      background: #3a2c00;
-      color: #fff;
-      }
-      main {
-      margin-top: 110px;
-      max-width: 950px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 32px;
-      }
-      #home {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 400px;
-      background: linear-gradient(90deg, #fff9c4 60%, #ffe066 100%);
-      border-radius: 24px;
-      margin-bottom: 36px;
-      box-shadow: 0 4px 20px rgba(255, 214, 10, 0.10);
-      }
-      .caminhao {
-      width: 380px;
-      max-width: 90vw;
-      margin-right: 56px;
-      filter: drop-shadow(0 4px 16px #ffe066);
-      transition: width 0.3s;
-      }
-      .headline {
-      font-size: 2.7rem;
-      font-weight: 700;
-      color: #3a2c00;
-      margin-bottom: 14px;
-      text-shadow: 0 2px 8px #fffde7;
-      }
-      .servicos, .contato {
-      background: #fffde7;
-      border-radius: 18px;
-      box-shadow: 0 2px 12px rgba(255, 214, 10, 0.08);
-      padding: 36px 28px;
-      margin-bottom: 36px;
-      
-      }
-      h2 {
-      font-size: 2.1rem;
-      color: #3a2c00;
-      margin-bottom: 20px;
-      text-shadow: 0 1px 4px #fffbe7;
-      }
-      .botao, .botao-fim {
-      background: #ffd60a;
-      color: #3a2c00;
-      border: none;
-      border-radius: 26px;
-      padding: 14px 32px;
-      font-size: 1.05rem;
-      margin: 10px 14px 0 0;
-      cursor: pointer;
-      transition: background 0.2s, color 0.2s;
-      text-decoration: none;
-      display: inline-block;
-      font-weight: 700;
-      box-shadow: 0 2px 8px rgba(255, 214, 10, 0.08);
-      }
-      .botao:hover, .botao-fim:hover {
-      background: #3a2c00;
-      color: #fff;
-      }
-      @media (max-width: 900px) {
-      .caminhao { width: 240px; margin-right: 24px; }
-      main { padding: 12px; }
-      }
-      @media (max-width: 700px) {
-      main { padding: 8px; }
-      #home { flex-direction: column; text-align: center; }
-      .caminhao { margin: 0 0 28px 0; width: 160px; }
-      .cabecalho {
-        flex-direction: column;
-        height: auto;
-        padding: 12px 8px;
-        border-radius: 0 0 24px 24px;
-      }
-      .logo { margin: 0 0 12px 0; }
-      }
-
-      footer{
-      padding: 24px;
-      text-align: center;
-      font-size: 0.9rem;
-      margin-top: 36px;
-      border-top-left-radius: 24px;
-      border-top-right-radius: 24px;
-      color: black;
-      
-      }
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: linear-gradient(90deg, #fff9c4 60%, #ffe066 100%);
+  color: #3a2c00;
+}
+.cabecalho {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: linear-gradient(90deg, #ffe066 60%, #ffd60a 100%);
+  box-shadow: 0 4px 24px rgba(255, 214, 10, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+  z-index: 100;
+  height: 80px;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  transition: box-shadow 0.2s;
+}
+.logo {
+  height: 110px;
+  margin-right: 24px;
+  filter: drop-shadow(0 2px 8px #fffde7);
+  transition: height 0.2s;
+}
+.botao-topo {
+  background: #fffde7;
+  border: 1.5px solid #ffd60a;
+  color: #3a2c00;
+  font-size: 1.1rem;
+  margin: 0 12px;
+  padding: 10px 22px;
+  cursor: pointer;
+  border-radius: 24px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(255, 214, 10, 0.10);
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.botao-topo:hover {
+  background: #3a2c00;
+  color: #fff;
+  border-color: #3a2c00;
+}
+main {
+  margin-top: 110px;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 36px 32px;
+}
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background: linear-gradient(90deg, #fff9c4 60%, #ffe066 100%);
+  border-radius: 28px;
+  margin-bottom: 36px;
+  box-shadow: 0 4px 24px rgba(255, 214, 10, 0.12);
+}
+.caminhao {
+  width: 360px;
+  max-width: 90vw;
+  margin-right: 48px;
+  filter: drop-shadow(0 4px 16px #ffe066);
+  transition: width 0.3s;
+}
+.headline {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #3a2c00;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 10px #fffde7;
+  letter-spacing: 0.5px;
+}
+.servicos, .contato {
+  background: #fffde7;
+  border-radius: 22px;
+  box-shadow: 0 2px 16px rgba(255, 214, 10, 0.10);
+  padding: 40px 32px;
+  margin-bottom: 36px;
+}
+h2 {
+  font-size: 2.2rem;
+  color: #3a2c00;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 6px #fffbe7;
+  letter-spacing: 0.2px;
+}
+.botao, .botao-fim {
+  background: #ffd60a;
+  color: white;
+  border: 1.5px solid #ffd60a;
+  border-radius: 28px;
+  padding: 14px 36px;
+  font-size: 1.08rem;
+  margin: 10px 14px 0 0;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(255, 214, 10, 0.10);
+}
+.botao:hover, .botao-fim:hover {
+  background: #3a2c00;
+  color: #fff;
+  border-color: #3a2c00;
+}
+@media (max-width: 900px) {
+  .caminhao { width: 200px; margin-right: 16px; }
+  main { padding: 16px 8px; }
+}
+@media (max-width: 700px) {
+  main { padding: 8px 2px; }
+  #home { flex-direction: column; text-align: center; }
+  .caminhao { margin: 0 0 20px 0; width: 120px; }
+  .cabecalho {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 4px;
+    border-radius: 0 0 20px 20px;
+  }
+  .logo { margin: 0 0 10px 0; height: 70px; }
+}
+footer {
+  padding: 24px;
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 36px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  color: #3a2c00;
+  
+  box-shadow: 0 -2px 12px rgba(255, 214, 10, 0.08);
+}
