@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/coleta.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function()
+        { emailjs.init("sdELDSi0WnSEBfZsX");
+
+        })();
+    </script>
+  </head>
+
+<body>
+    <div class="cabecalho">
+    <img class="logo" src="../assets/logo.png" alt="Logo Expresso Sagui" onclick="location.href='index.html'" cursor: pointer; />
+    </div>
+
+
+    <h1>Material a ser coletado</h1>
+
+
+    <form id="coleta">
+        <h1>Dados do Remetente</h1>
+        <label for="cnpjRemetente">CNPJ:</label>
+        <input type="text" id="cnpjRemetente" name="cnpjRemetente" required>
+
+        <label for="cepRemetente">CEP:</label>
+        <input type="text" id="cepRemetente" name="cepRemetente" required>
+
+        <label for="nomeRemetente">Nome do Solicitante:</label>
+        <input type="text" id="nomeRemetente" name="nomeRemetente" required>
+
+        <label for="email">E-mail para contato:</label>
+        <input type="email" id="email" name="to_email" required />
+
+
+        <h1>Dados do Destinatário</h1>
+        <label for="cnpjDestinatario">CNPJ:</label>
+        <input type="text" id="cnpjDestinatario" name="cnpjDestinatario" required>
+
+        <label for="cepDestinatario">CEP:</label>
+        <input type="text" id="cepDestinatario" name="cepDestinatario" required>
+
+        <h1>Material a ser coletado</h1>
+        <label for="notaMaterial">Nota Fiscal:</label>
+        <input type="text" id="notaMaterial" name="notaMaterial" required>
+
+        <label for="volumesMaterial">Volumes:</label>
+        <input type="text" id="volumesMaterial" name="volumesMaterial" required>
+
+        <label for="pesoMaterial">Peso (kg):</label>
+        <input type="number" id="pesoMaterial" name="pesoMaterial" required>
+
+        <label for="dimensoesMaterial">Dimensões (LxAxP cm):</label>
+        <input type="text" id="dimensoesMaterial" name="dimensoesMaterial" required>
+
+        <button type="submit">Enviar</button>
+    
+    </form>
+    <footer>
+      <div class="rodape">
+        <p>&copy; 2025 Expresso Sagui. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <a href="https://murilofernandes1.github.io/MeuPortfolio/" target="_blank">Murilo Fernandes</a></p>
+    </div>
+
+    
+    <script>
+    function showCustomAlert(message) {
+        const existing = document.querySelector('.custom-alert');
+        if (existing) existing.remove();
+
+        const alertDiv = document.createElement('div');
+        alertDiv.className = 'custom-alert';
+        alertDiv.innerHTML = `
+            <div>${message}</div>
+            <button onclick="this.parentElement.remove()">OK</button>
+        `;
+        document.body.appendChild(alertDiv);
+    }
+
+    document.getElementById('coleta').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_s2icbrr', 'template_4t43a8o', this);
+
+        emailjs.sendForm('service_s2icbrr', 'template_k5jcrbd', this)
+            .then(() => {
+                showCustomAlert('Solicitação enviada com sucesso!');
+                this.reset();
+            }, (error) => {
+                console.error('Erro ao enviar:', error.text || error);
+                showCustomAlert('Erro ao enviar solicitação. Tente novamente.');
+            });
+    });
+    </script>
+
+</body>
+

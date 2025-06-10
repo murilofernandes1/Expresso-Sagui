@@ -1,0 +1,128 @@
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Montserrat', Arial, sans-serif;
+        background: linear-gradient(90deg, #fff9c4 60%, #ffe066 100%);
+        color: #3a2c00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalho {
+        padding-top: 10px;
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        background: linear-gradient(90deg, #ffe066 60%, #ffd60a 100%);
+        box-shadow: 0 4px 16px rgba(255, 214, 10, 0.12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        height: 80px;
+        border-bottom-left-radius: 32px;
+        border-bottom-right-radius: 32px;
+    }
+
+    .logo {
+        height: 120px;
+        margin-right: 28px;
+        filter: drop-shadow(0 2px 8px #fffde7);
+    }
+
+    .home {
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 200px;
+    }
+
+    .titulo {
+        margin-bottom: 12px;
+    }
+
+    .subtitulo {
+        font-size: 1.2rem;
+        color: #3a2c00;
+        text-align: center;
+        margin: 0;
+    }
+
+    form#cotacao {
+        padding-top: -100px;
+        background: #fff;
+        max-width: 420px;
+        margin: 32px auto;
+        padding: 32px 32px 24px 32px;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    form#cotacao h1 {
+        font-size: 1.2rem;
+        margin: 0 0 12px 0;
+        color: #4a5568;
+        text-align: left;
+    }
+
+    form#cotacao label {
+        font-size: 1rem;
+        color: #3a2c00;
+        margin-bottom: 4px;
+        font-weight: 500;
+    }
+
+    form#cotacao input[type="number"] {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 1rem;
+        padding: 10px 14px;
+        border: 1.5px solid #e2e8f0;
+        border-radius: 8px;
+        background: #f9fafb;
+        transition: border 0.2s;
+        margin-bottom: 12px;
+    }
+
+    form#cotacao input:focus {
+        border-color: #3182ce;
+        outline: none;
+        background: #fff;
+    }
+
+    form#cotacao button[type="submit"] {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        background: #ffd600;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 14px 0;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: background 0.2s, box-shadow 0.2s;
+        box-shadow: 0 2px 8px rgba(49,130,206,0.08);
+    }
+
+    form#cotacao button[type="submit"]:hover {
+        background: #3a2c00;
+        box-shadow: 0 4px 16px rgba(49,130,206,0.12);
+    }
+    .rodape{
+      padding: 24px;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 36px;
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+      color: black;
+      
+      }
